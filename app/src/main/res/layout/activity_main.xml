@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightBlack"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/working"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:textSize="28sp"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:textSize="32sp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/ac"
+            style="@style/buttonNumber"
+            android:text="AC">
+
+        </Button>
+
+        <ImageButton
+            android:id="@+id/cut"
+            android:src="@drawable/baseline_backspace_24"
+            android:scaleType="centerCrop"
+            android:padding="30dp"
+            style="@style/buttonNumber">
+
+        </ImageButton>
+        <ImageButton
+            android:id="@+id/setting"
+            style="@style/buttonNumber"
+            android:src="@drawable/baseline_settings_24"
+            android:scaleType="centerCrop"
+            android:padding="30dp"
+            >
+
+        </ImageButton>
+        <Button
+            android:id="@+id/divide"
+            style="@style/buttonOperation"
+            android:text="/">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/buttonNumber"
+            android:text="7">
+
+        </Button>
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/buttonNumber"
+            android:text="8">
+
+        </Button>
+        <Button
+            android:id="@+id/nine"
+            style="@style/buttonNumber"
+            android:text="9">
+
+        </Button>
+        <Button
+            android:id="@+id/multiply"
+            style="@style/buttonOperation"
+            android:text="X">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/buttonNumber"
+            android:text="4">
+
+        </Button>
+
+        <Button
+            android:id="@+id/five"
+            style="@style/buttonNumber"
+            android:text="5">
+
+        </Button>
+        <Button
+            android:id="@+id/six"
+            style="@style/buttonNumber"
+            android:text="6">
+
+        </Button>
+        <Button
+            android:id="@+id/minus"
+            style="@style/buttonOperation"
+            android:text="-">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/buttonNumber"
+            android:text="1">
+
+        </Button>
+
+        <Button
+            android:id="@+id/two"
+            style="@style/buttonNumber"
+            android:text="2">
+
+        </Button>
+        <Button
+            android:id="@+id/three"
+            style="@style/buttonNumber"
+            android:text="3">
+
+        </Button>
+        <Button
+            android:id="@+id/plus"
+            style="@style/buttonOperation"
+            android:text="+">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <ImageButton
+            android:id="@+id/flash"
+            style="@style/buttonNumber"
+            android:src="@drawable/baseline_flashlight_on_24"
+            android:padding="30dp"
+            android:scaleType="centerCrop"
+            >
+
+        </ImageButton>
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/buttonNumber"
+            android:text="0">
+
+        </Button>
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/buttonNumber"
+            android:text=".">
+
+        </Button>
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/buttonNumber"
+            android:background="@color/orange"
+            android:layout_weight="1"
+            android:text="=">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
